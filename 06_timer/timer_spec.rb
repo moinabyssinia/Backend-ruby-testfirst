@@ -52,7 +52,7 @@ describe "Timer" do
   #   it 'pads one' do
   #     expect(@timer.padded(1)).to eq('01')
   #   end
-  #   it "doesn't pad a two-digit number" do
+  #   skip "doesn't pad a two-digit number" do
   #     expect(@timer.padded(12)).to eq('12')
   #   end
   # end

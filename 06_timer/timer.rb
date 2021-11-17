@@ -11,11 +11,11 @@ class Timer
 
   # method to return string version of hour, minute, secnods
   def time_string
-    # getHours + ":" + getMinutes + ":" + getSeconds(@seconds)
     legit_seconds, remainder = getSeconds(@seconds)
 
     legit_minutes, hours = getMinutes(remainder)
 
+    # return output 
     hours + ":" + legit_minutes + ":" + legit_seconds
         
   end
@@ -41,11 +41,6 @@ class Timer
     end
 
     return time_formater(legit_minutes), time_formater((minutes/60.0).to_i)
-  end
-
-  # get the hours part 
-  def getHours()
-    
   end
 
   # format seconds to add 0s
